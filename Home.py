@@ -44,7 +44,7 @@ col3, col4, col5 = st.columns([0.5, 1, 0.5])
 df = pd.read_csv("data.csv", sep=";")
 
 with col4:
-    for index, row in df[:6].iterrows():
+    for index, row in df[:7].iterrows():
         st.header(row["title"])
         st.write(row["description"])
         st.image("images/" + row["image"])
